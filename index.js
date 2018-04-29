@@ -1,3 +1,10 @@
+/**
+ * Плагин для создания аккардиона на сайте
+ * @author [MFS]
+ * @param {object} option [
+ autoClose - {boolean} Закрытие при клике на другой элемент
+ ]
+ */
 Element.prototype.Accordeon = function (option) {
     //Значения опций по умолчанию
     var opt = {
