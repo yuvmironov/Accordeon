@@ -4,6 +4,8 @@
 
 ## Как использовать
 Для использования создайте структуру вашего аккордиона как показано ниже:
+**HTML**
+```
     <div id="Accord" class="Accord">
         <div class="Accord-Element">
             <a href="#" class="Accord-Link">Элемент 1</a>
@@ -22,4 +24,12 @@
             <div class="Accord-Content">Содержимое 4</div>
         </div>
     </div>
+```
+**Java Script**
+```
+<script src="index.js"></script>
+<script>
+    document.getElementById('Accord').Accordeon();
+</script>
+```
 ## Используемые опции
