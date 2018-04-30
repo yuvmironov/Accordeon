@@ -12,7 +12,20 @@
     <div id="Accord" class="Accord">
         <div class="Accord-Element">
             <a href="#" class="Accord-Link">Элемент 1</a>
-            <div class="Accord-Content">Содержимое 1</div>
+            <div id="AccordInner" class="Accord-Content Accord">
+                <div class="Accord-Element">
+                    <a href="#" class="Accord-Link">item01</a>
+                    <div class="Accord-Content">Внутренний контент 1</div>
+                </div>
+                <div class="Accord-Element">
+                    <a href="#" class="Accord-Link">item02</a>
+                    <div class="Accord-Content">Внутренний контент 2</div>
+                </div>
+                <div class="Accord-Element">
+                    <a href="#" class="Accord-Link">item03</a>
+                    <div class="Accord-Content">Внутренний контент 3</div>
+                </div>
+            </div>
         </div>
         <div class="Accord-Element">
             <a href="#" class="Accord-Link">Элемент 2</a>
@@ -28,9 +41,8 @@
         </div>
     </div>
     <script>
-        var test2 = document.getElementById('Accord');
-        test2.Accordeon({autoClose: false});
-
+        document.getElementById('Accord').Accordeon({autoClose: true});
+        document.getElementById('AccordInner').Accordeon({autoClose: false});
     </script>
 </body>
 
