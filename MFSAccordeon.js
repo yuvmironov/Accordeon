@@ -5,7 +5,7 @@
  autoClose - {boolean} Закрытие при клике на другой элемент
  ]
  */
-Element.prototype.Accordeon = function (option) {
+Element.prototype.MFSAccordeon = function (option) {
     //Значения опций по умолчанию
     var opt = {
         autoClose: false //Закртие при клике по другому элементу

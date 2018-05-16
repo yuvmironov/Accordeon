@@ -29,15 +29,16 @@
 ```
 **Java Script**
 ```
-<script src="index.js"></script>
+<script src="MFSAccordeon.js"></script>
 <script>
-    document.getElementById('Accord').Accordeon();
+    document.getElementById('Accord').MFSAccordeon();
 </script>
 ```
 **CSS**
 ```
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="MFSAccordeon.css">
 ```
 ## Используемые опции
 Для использования опций необходимо вызвать `Accordeon({optioinName: optionValue})`
-`autoClose: [true/false]` - Используется для автозакрытия предыдущего открытого пункта
+
+* `autoClose: [true/false]` - Используется для автозакрытия предыдущего открытого пункта
