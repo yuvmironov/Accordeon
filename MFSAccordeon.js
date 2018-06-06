@@ -26,9 +26,14 @@ Element.prototype.MFSAccordeon = function (option) {
         accLink[0].addEventListener('click', function (e) {
             e.preventDefault();
             if (opt.autoClose) {
-                for (var i = 0; i < accordLinks.length; i++) {
-                    accordLinks[i].classList.replace('Accord-Link_Active', 'Accord-Link_NotActive');
-                    this.classList.replace('Accord-Link_NotActive', 'Accord-Link_Active');
+                
+                if (this.classList.contains('Accord-Link_Active')) {
+	                this.classList.replace('Accord-Link_Active', 'Accord-Link_NotActive');
+                } else {
+	                for (var i = 0; i < accordLinks.length; i++) {
+		                accordLinks[i].classList.replace('Accord-Link_Active', 'Accord-Link_NotActive');
+		                this.classList.replace('Accord-Link_NotActive', 'Accord-Link_Active');
+	                }
                 }
             } else {
                 if (this.classList.contains('Accord-Link_NotActive')) {
