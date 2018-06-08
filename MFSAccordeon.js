@@ -28,18 +28,23 @@ Element.prototype.MFSAccordeon = function (option) {
             if (opt.autoClose) {
                 
                 if (this.classList.contains('Accord-Link_Active')) {
-	                this.classList.replace('Accord-Link_Active', 'Accord-Link_NotActive');
+	                this.classList.remove('Accord-Link_Active');
+	                this.classList.add('Accord-Link_NotActive');
                 } else {
 	                for (var i = 0; i < accordLinks.length; i++) {
-		                accordLinks[i].classList.replace('Accord-Link_Active', 'Accord-Link_NotActive');
-		                this.classList.replace('Accord-Link_NotActive', 'Accord-Link_Active');
+		                accordLinks[i].classList.remove('Accord-Link_Active');
+		                accordLinks[i].classList.add('Accord-Link_NotActive');
+		                this.classList.remove('Accord-Link_NotActive');
+		                this.classList.add('Accord-Link_Active');
 	                }
                 }
             } else {
                 if (this.classList.contains('Accord-Link_NotActive')) {
-                    this.classList.replace('Accord-Link_NotActive', 'Accord-Link_Active');
+                    this.classList.remove('Accord-Link_NotActive');
+	                this.classList.add('Accord-Link_Active');
                 } else {
-                    this.classList.replace('Accord-Link_Active', 'Accord-Link_NotActive');
+                    this.classList.remove('Accord-Link_Active');
+	                this.classList.add('Accord-Link_NotActive');
                 }
             }
         });
